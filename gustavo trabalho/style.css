@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#F5F5DC
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CD212A; /* Cor vermelha da bandeira da Itália */
+    padding: 10px 20px;
+    height: 80px;
+}
+
+.logo img {
+    height: 70px; /* Ajuste a altura da logo conforme necessário */
+    width: auto;
+}
+
+.contact-btn {
+    background-color: white;
+    color: #CD212A; /* Cor vermelha da bandeira da Itália */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #9A1B24; /* Cor vermelha mais escura para o efeito hover */
+    color: rgb(255, 255, 255);
+}
+
+a {
+    font-size: 26px;
+}
+
+/* Caixa com a imagem de fundo */
+.caixa {
+    background-image: url('pizza.jpg'); /* Caminho da imagem de fundo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    align-items: center;
+    padding-right: 20px; /* Distância da borda direita */
+}
+
+/* Título no lado direito da imagem */
+#titu1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombrinha para destacar */
+    margin: 0;
+    text-align: right; /* Alinha o título à direita */
+    margin-left: 800px;
+}
+
+.caixinha {
+    background-color: #37ae27;
+    width: 1243px;
+    height: 260px;
+    padding: 10px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F5F5DC;
+    word-wrap: break-word;
+    overflow: hidden; /* Impede a rolagem da caixa */
+}
+
+p {
+    width: 600px;
+    margin-left: 20px;
+}
+
+/* Estilo para o título */
+.titu2 {
+    font-size: 28px;
+    position: relative;
+    margin-left: 30px;
+    line-height: 1.4;
+    color: #F5F5DC;
+    top: 20px;
+}
+
+/* Estilo para a imagem */
+.foto1 {
+    position: absolute;
+    top: -25px;
+    right: 180px;
+    width: 300px;
+    height: 300px;
+}
+
+.titu3{
+
+    font-size: 28px;
+    position: relative;
+    margin-left: 600px;
+    line-height: 1.4;
+    color: #37ae27;
+    top: 20px;
+
+}
+
+.caixinha2 {
+    background-color: #F5F5DC;
+    width: 1243px;
+    height: 260px;
+    padding: 10px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #37ae27;
+    word-wrap: break-word;
+}
+
+.p2{
+    position: relative;
+    margin-left: 600px;
+}
+
+.foto2{
+    position: absolute;
+    top: -15px;
+}
+
+.titu4{
+    font-size: 28px;
+    position: relative;
+    margin-left: 30px;
+    line-height: 1.4;
+    color: #F5F5DC;
+    top: 20px;
+}
+
+.caixinha3{
+background-color: #37ae27;
+width: 1243px;
+height: 260px;
+padding: 10px;
+position: relative;
+font-family: Arial, Helvetica, sans-serif;
+color: #F5F5DC;
+word-wrap: break-word;
+}
+
+.foto3{
+    position: absolute;
+    top: 25px;
+    right: 180px;
+    width: 200px;
+    height: 200px;
+}
+
+/* Formulário de Contato */
+.form-section {
+    background-color: #F5F5DC;
+    display: flex;
+    justify-content: space-between; /* Espaça as duas colunas (formulário e foto) */
+    align-items: flex-start;
+    max-width: 100%; /* Evita que a largura ultrapasse o limite da tela */
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Estilo do lado esquerdo (formulário) */
+.form-left {
+    width: 50%; /* 50% da largura para o formulário */
+    padding-right: 20px;
+}
+
+/* Estilo do lado direito (foto) */
+.form-right {
+    width: 40%; /* 40% da largura para a foto */
+    padding-left: 20px;
+    text-align: center; /* Alinha a foto ao centro dentro da coluna */
+}
+
+/* Título dentro da seção de formulário */
+.form-title {
+    font-size: 28px;
+    color: #37ae27;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; /* Alinha o título à esquerda */
+}
+
+/* Foto do lado direito, abaixo do título */
+.form-photo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-top: 50px; /* Espaço entre o título e a foto */
+}
+
+/* Formulário em si */
+.form-container {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #37ae27;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #37ae27;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #CD212A;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #9A1B24;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #CD212A; /* Mesma cor da navbar */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px 0; /* Distância interna (padding) */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    font-size: 14px; /* Tamanho da fonte */
+    margin: 0; /* Remove margens padrão */
+}
+
