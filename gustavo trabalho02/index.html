@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Preto e Roxo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="sla.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img id="logo" src="logo.webp" alt="Logo">
+            
+            <div class="menu-links">
+                <a href="#">Ajuda</a>
+
+                <div class="dropdown">
+                    <p onclick="mostrarConteudo()">
+                        Categorias
+                        <svg id="seta" class="seta" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 10L12 14L16 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </p>
+                    <div class="conteudo" id="conteudo">
+                        <p>Ação</p>  
+                        <p>Aventura</p>
+                        <p>Comédia</p>
+                        <p>Terror</p>
+                        <p>Suspense</p>
+                        <p>Anime</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="login.html"><img id="perfil" src="login.png" alt="Perfil"></a>
+        </nav>
+    </header>
+
+    <div class="caixa1">
+        <div class="linha"></div>
+
+        <center><h1 class="filmes" >Filmes em Cartaz</h1></center>
+
+        <div class="container">
+            <div class="quadrado">
+                <img src="cartaz1.webp" alt="Imagem 1">
+                <h3 class="titu1">Capitão América: Admirável 
+                  Mundo Novo</h3>
+            </div> <!-- Quadrado 1 -->
+            <div class="quadrado">
+                <img src="cartaz2.webp" alt="Imagem 2">
+                <h3 class="titu2">Acompanhante Perfeita</h3>
+            </div> <!-- Quadrado 2 -->
+            <div class="quadrado">
+                <img src="cartaz3.webp" alt="Imagem 3">
+                <h3 class="titu3">Blindado</h3>
+            </div> <!-- Quadrado 3 -->
+        </div>
+        
+        <div class="container2">
+         <center><h2>Em Cartaz</h2></center>
+         <div class="carousel">
+           <button class="prev">&lt;</button>
+           <div class="carousel-container">
+             <div class="carousel-track">
+               <div class="movie-card">
+                 <img src="chico bento.jpg" alt="Chico Bento">
+                 <p>Chico Bento</p>
+               </div>
+               <div class="movie-card">
+                 <img src="mufasa.jpg" alt="Mufasa">
+                 <p>Mufasa</p>
+               </div>
+               <div class="movie-card">
+                 <img src="sonic.jpg" alt="Sonic 3">
+                 <p>Sonic 3</p>
+               </div>
+               <div class="movie-card">
+                 <img src="o auto da compadecida.jpg" alt="O Rei da Comédia">
+                 <p>O Auto da Compadecida</p>
+               </div>
+               <div class="movie-card">
+                <img src="ainda estou aqui.jpg" alt="Ainda Estou Aqui">
+                <p>Ainda Estou Aqui</p>
+              </div>
+              <div class="movie-card">
+                <img src="emilia.jpg" alt="Emilia Perez">
+                <p>Emilia Pérez</p>
+              </div>
+              <div class="movie-card">
+                <img src="conclave.jpg" alt="Conclave">
+                <p>Conclave</p>
+              </div>
+              <div class="movie-card">
+                <img src="covil.jpg" alt="Covil de ladrões">
+                <p>Covil de Ladrões 2</p>
+              </div>
+              <div class="movie-card">
+                <img src="o homem do saco.webp" alt="O homem do saco">
+                <p>O Homem do Saco</p>
+              </div>
+             </div>
+           </div>
+           <button class="next">&gt;</button>
+         </div>
+       </div>
+
+       <div class="caixa1">
+        <div class="linha"></div>
+
+        <center><h1 class="filmes2" >Filmes em Promoção</h1></center>
+
+        <div class="container3">
+            <div class="quadrado2">
+                <img src="moana2.jpg" alt="Moana 2">
+                <h3 class="titulo1">Moana 2</h3>
+            </div> <!-- Quadrado 1 -->
+            <div class="quadrado2">
+                <img src="Lobisomen.jpg" alt="Lobisomen">
+                <h3 class="titulo2">Lobisomen</h3>
+            </div> <!-- Quadrado 2 -->
+            <div class="quadrado2">
+                <img src="Wicked.jpg" alt="Wicked">
+                <h3 class="titulo3">Wicked</h3>
+            </div> <!-- Quadrado 3 -->
+        </div>
+
+        <center><h1 class="filmes3" >Filmes ganhadores de Oscar de volta em cartaz!</h1></center>
+
+        <div class="container4">
+            <div class="quadrado3">
+                <img src="subs.jpg" alt="Substância">
+                <h3 class="titul1">Oscar 2025</h3>
+            </div> <!-- Quadrado 1 -->
+            <div class="quadrado3">
+                <img src="oppe.jpg" alt="Oppenheimer">
+                <h3 class="titul2">Oscar 2024</h3>
+            </div> <!-- Quadrado 2 -->
+            <div class="quadrado3">
+                <img src="titanic.jpg" alt="Titanic">
+                <h3 class="titul3">Oscar 1998</h3>
+            </div> <!-- Quadrado 3 -->
+            <div class="quadrado3">
+              <img src="chefe.jpg" alt="O Poderoso Chefão">
+              <h3 class="titul4">Oscar 1973</h3>
+          </div> <!-- Quadrado 4 -->
+        </div>
+
+  
+</body>
+</html>

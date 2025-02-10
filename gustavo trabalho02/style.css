@@ -1,0 +1,529 @@
+header {
+    background-color: #000000; 
+    padding: 15px 30px;
+    box-shadow: 0px 14px 10px rgba(85, 0, 255, 0.2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 90px;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+body{
+    background-color: black;
+}
+
+nav a, nav p {
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    
+    transition: color 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav a:hover, nav p:hover {
+    color: rgb(85, 24, 143);
+}
+
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.seta {
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+}
+
+
+.conteudo {
+    display: none;
+    position: absolute;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    top: 35px;
+    left: 0;
+    min-width: 150px;
+    text-align: left;
+    z-index: 10000;
+}
+
+
+.conteudo p {
+    margin: 5px 0;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.conteudo p:hover {
+    background-color: rgb(85, 24, 143);
+    border-radius: 5px;
+}
+
+
+.conteudo.active {
+    display: block;
+}
+
+
+.seta-ativa {
+    transform: rotate(180deg);
+}
+
+
+#perfil {
+    height: 85px;
+    border-radius: 50%;
+    border: 2px solid #55188f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.linha{
+    background-color: #55188f;
+    height: 3px;
+}
+
+.filmes{
+    color: rgb(255, 255, 255);
+    top: 90px;
+    position: relative;
+}
+
+.container {
+    display: flex; 
+    justify-content: center; 
+    gap: 160px; 
+    position: relative;
+    top: 180px;
+}
+
+
+.quadrado {
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: #6A0DAD;
+}
+
+
+.quadrado img {
+    width: 300px; 
+    height: 450px;
+    object-fit: cover; 
+    border: 10px solid hsl(271, 68%, 14%); 
+    border-radius: 15px;
+    box-shadow:0px 0px 40px #1a032f;
+    transition: transform 0.3s ease;
+}
+
+
+.quadrado:hover img {
+    transform: scale(1.1);
+}
+
+.quadrado h3 {
+    margin-top: 30px;
+    font-size: 20px; 
+    color: rgb(115, 115, 115); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: transform 0.3s ease; 
+}
+
+
+.quadrado:hover h3 {
+    transform: scale(1.1);
+    color: #6A0DAD; 
+}
+
+.filmes {
+    font-size: 3rem; /* Tamanho do texto */
+    font-family: 'Arial', sans-serif; /* Tipo de fonte */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    background: linear-gradient(135deg, #800080, #000000); /* Gradiente roxo e preto */
+    -webkit-background-clip: text; /* Faz o gradiente aparecer no texto */
+    background-clip: text;
+    padding: 15px; /* Espaçamento ao redor do texto */
+    text-transform: uppercase; /* Deixa as letras maiúsculas */
+    font-weight: bold; /* Deixa o texto em negrito */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra suave ao redor do texto */
+    position: relative; /* Necessário para a linha aparecer embaixo do título */
+    transition: all 0.3s ease-in-out; /* Transição suave para efeitos ao passar o mouse */
+}
+
+.filmes:hover {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Sombra suave ao passar o mouse */
+    transform: translateY(-2px); /* Leve movimento ao passar o mouse */
+}
+
+/* Linha centralizada */
+.filmes::after {
+    content: ''; /* Não precisa de texto, apenas a linha */
+    position: absolute;
+    bottom: 0;
+    left: 25%; /* Centraliza a linha */
+    transform: translateX(-50%); /* Ajusta o posicionamento para que fique bem no centro */
+    width: 50%; /* A linha será 50% da largura do título */
+    height: 3px; /* Espessura da linha */
+    background-color: #260842; /* Cor roxa da linha */
+    transform: scaleX(0); /* A linha começa invisível */
+    transform-origin: center center; /* A linha vai crescer a partir do centro */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.filmes:hover::after {
+    transform: scaleX(1); /* A linha se estende quando o mouse passa */
+}
+
+.titu1{
+    position: relative;
+    margin-left: 20px;
+}
+
+.titu2{
+    position: relative;
+    margin-left: 20px;
+}
+
+.titu3{
+    position: relative;
+    margin-left: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container2 {
+    padding: 100px;
+    background-color: #1a032f;
+    position: relative;
+    top: 290px;
+  }
+  
+  h2 {
+    border-bottom: 2px solid #5a165b;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 40px;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 1000px; /* Garantir que ocupe toda a largura do contêiner */
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 0;
+    transition: transform 0.5s ease-in-out; /* Transição suave de 0.5 segundos */
+  }
+  
+  .movie-card {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    flex-shrink: 0;
+  }
+  
+  .movie-card p {
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .movie-card img {
+    display: block;
+    width: calc(100% - 20px);
+    height: 400px; /* Garantindo uma altura fixa */
+    border-radius: 10px;
+    margin: 10px;
+    object-fit: cover; /* Isso mantém o preenchimento da imagem, sem distorção */
+  }
+  
+  .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.8;
+  }
+  
+  .carousel button:hover {
+    background-color: #555;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev.disabled, .next.disabled {
+    opacity: 0.3; /* Torna as setas menos visíveis quando desabilitadas */
+    cursor: not-allowed; /* Impede o clique */
+  }
+  
+  button[disabled] {
+    pointer-events: none; /* Impede qualquer interação com o botão */
+  }
+
+  .container3 {
+    display: flex; 
+    justify-content: center; 
+    gap: 160px; 
+    position: relative;
+    top: 180px;
+    background-color: #000000;
+}
+
+.filmes2 {
+    position: relative;
+    top: 320px;
+    font-size: 40px; /* Tamanho do texto */
+    font-family: 'Arial', sans-serif; /* Tipo de fonte */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    background: linear-gradient(135deg, #800080, #000000); /* Gradiente roxo e preto */
+    -webkit-background-clip: text; /* Faz o gradiente aparecer no texto */
+    background-clip: text;
+    padding: 15px; /* Espaçamento ao redor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra suave ao redor do texto */
+    position: relative; /* Necessário para a linha aparecer embaixo do título */
+    transition: all 0.3s ease-in-out; /* Transição suave para efeitos ao passar o mouse */
+    z-index: 10; /* Garante que o texto ficará acima de outras divs */
+}
+
+.filmes2:hover {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Sombra suave ao passar o mouse */
+    transform: translateY(-2px); /* Leve movimento ao passar o mouse */
+}
+
+/* Linha centralizada */
+.filmes2::after {
+    content: ''; /* Não precisa de texto, apenas a linha */
+    position: absolute;
+    bottom: 0;
+    left: 25%; /* Centraliza a linha */
+    transform: translateX(-50%); /* Ajusta o posicionamento para que fique bem no centro */
+    width: 50%; /* A linha será 50% da largura do título */
+    height: 3px; /* Espessura da linha */
+    background-color: #260842; /* Cor roxa da linha */
+    transform: scaleX(0); /* A linha começa invisível */
+    transform-origin: center center; /* A linha vai crescer a partir do centro */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.filmes2:hover::after {
+    transform: scaleX(1); /* A linha se estende quando o mouse passa */
+}
+
+.quadrado2 {
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: #6A0DAD;
+    position: relative;
+    top: 180px;
+}
+
+
+.quadrado2 img {
+    width: 300px; 
+    height: 450px;
+    object-fit: cover; 
+    border: 10px solid hsl(271, 68%, 14%); 
+    border-radius: 15px;
+    box-shadow:0px 0px 40px #1a032f;
+    transition: transform 0.3s ease;
+}
+
+
+.quadrado2:hover img {
+    transform: scale(1.1);
+}
+
+.quadrado2 h3 {
+    margin-top: 30px;
+    font-size: 20px; 
+    color: rgb(115, 115, 115); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: transform 0.3s ease; 
+}
+
+
+.quadrado2:hover h3 {
+    transform: scale(1.1);
+    color: #6A0DAD; 
+}
+
+.titulo1{
+    position: relative;
+    margin-left: 20px;
+}
+
+.titulo2{
+    position: relative;
+    margin-left: 20px;
+}
+
+.titulo3{
+    position: relative;
+    margin-left: 20px;
+}
+
+.container4 {
+    display: flex; 
+    justify-content: center; 
+    gap: 50px; 
+    position: relative;
+    top: 380px;
+    background-color: #1a032f;
+    height: 800px;
+}
+
+.filmes3 {
+    position: relative;
+    top: 500px;
+    font-size: 40px; /* Tamanho do texto */
+    font-family: 'Arial', sans-serif; /* Tipo de fonte */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    background: linear-gradient(135deg, #800080, #000000); /* Gradiente roxo e preto */
+    -webkit-background-clip: text; /* Faz o gradiente aparecer no texto */
+    background-clip: text;
+    padding: 15px; /* Espaçamento ao redor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra suave ao redor do texto */
+    position: relative; /* Necessário para a linha aparecer embaixo do título */
+    transition: all 0.3s ease-in-out; /* Transição suave para efeitos ao passar o mouse */
+    z-index: 10; /* Garante que o texto ficará acima de outras divs */
+}
+
+.filmes3:hover {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Sombra suave ao passar o mouse */
+    transform: translateY(-2px); /* Leve movimento ao passar o mouse */
+}
+
+/* Linha centralizada */
+.filmes3::after {
+    content: ''; /* Não precisa de texto, apenas a linha */
+    position: absolute;
+    bottom: 0;
+    left: 25%; /* Centraliza a linha */
+    transform: translateX(-50%); /* Ajusta o posicionamento para que fique bem no centro */
+    width: 50%; /* A linha será 50% da largura do título */
+    height: 3px; /* Espessura da linha */
+    background-color: #260842; /* Cor roxa da linha */
+    transform: scaleX(0); /* A linha começa invisível */
+    transform-origin: center center; /* A linha vai crescer a partir do centro */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.filmes3:hover::after {
+    transform: scaleX(1); /* A linha se estende quando o mouse passa */
+}
+
+.quadrado3 {
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: #6A0DAD;
+    position: relative;
+    top: 180px;
+}
+
+.quadrado3 img {
+    width: 240px;
+    height: 400px;
+    object-fit: cover;
+    border: 10px solid hsl(271, 68%, 14%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px #1a032f;
+    transition: transform 0.3s ease;
+    transform: translateY(-10px); /* Move a imagem para cima */
+}
+
+.quadrado3:hover img {
+    transform: scale(1.2); /* Aumenta o zoom da imagem */
+}
+
+.quadrado3 h3 {
+    position: relative;
+    top: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgb(115, 115, 115);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.quadrado3:hover h3 {
+    transform: scale(1.1);
+    color: #6A0DAD;
+}
+
+
+.titul1{
+    position: relative;
+    margin-left: 20px;
+}
+
+.titul2{
+    position: relative;
+    margin-left: 20px;
+}
+
+.titul3{
+    position: relative;
+    margin-left: 20px;
+}
