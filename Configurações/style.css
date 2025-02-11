@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px 20px;
+    height: 70px;
+  }
+  
+  .nav-left,
+  .nav-center,
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Botão Voltar (Seta) */
+  .back-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    color: #7a1ae6;
+    transform: rotate(180deg);
+  }
+  
+  /* Título com efeito de sublinhado */
+  .nav-center h1 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-center h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #7a1ae6;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-center h1:hover::after {
+    width: 100%;
+  }
+  
+  .nav-right .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Conteúdo principal */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  /* Títulos das seções */
+  .settings-section h2,
+  .account-section h2 {
+    margin-bottom: 15px;
+    border-left: 4px solid #7a1ae6;
+    padding-left: 10px;
+    font-size: 22px;
+  }
+  
+  /* Itens de configuração */
+  .setting-item {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .setting-item:hover {
+    background-color: #333;
+  }
+  
+  .setting-icon {
+    flex: 0 0 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #7a1ae6;
+  }
+  
+  .setting-label {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .setting-control {
+    flex: 0 0 auto;
+  }
+  
+  .setting-control input[type="checkbox"],
+  .setting-control select {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Botão Desconectar */
+  .disconnect-button {
+    background-color: #7a1ae6;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .disconnect-button:hover {
+    background-color: #6b0aaf;
+  }
+  

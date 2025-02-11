@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Configurações</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Fonte Google (Roboto) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <button class="back-button" onclick="window.history.back();">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+      </div>
+      <div class="nav-center">
+        <h1>Configurações</h1>
+      </div>
+      <div class="nav-right">
+        <img src="perf.webp" alt="Foto de Perfil" class="profile-pic">
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="settings-section">
+      <h2>Preferências</h2>
+
+      <div class="setting-item">
+        <div class="setting-icon">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div class="setting-label">Notificações</div>
+        <div class="setting-control">
+          <input type="checkbox" checked>
+        </div>
+      </div>
+
+      <div class="setting-item">
+        <div class="setting-icon">
+          <i class="fas fa-moon"></i>
+        </div>
+        <div class="setting-label">Modo Escuro</div>
+        <div class="setting-control">
+          <input type="checkbox">
+        </div>
+      </div>
+
+      <div class="setting-item">
+        <div class="setting-icon">
+          <i class="fas fa-language"></i>
+        </div>
+        <div class="setting-label">Idioma</div>
+        <div class="setting-control">
+          <select>
+            <option>Português</option>
+            <option>Inglês</option>
+            <option>Espanhol</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="setting-item">
+        <div class="setting-icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <div class="setting-label">Qualidade do Vídeo</div>
+        <div class="setting-control">
+          <select>
+            <option>144p</option>
+            <option>360p</option>
+            <option>720p</option>
+            <option>1080p</option>
+            <option>4K</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="setting-item">
+        <div class="setting-icon">
+          <i class="fas fa-closed-captioning"></i>
+        </div>
+        <div class="setting-label">Legendas</div>
+        <div class="setting-control">
+          <input type="checkbox" checked>
+        </div>
+      </div>
+
+      <div class="setting-item">
+        <div class="setting-icon">
+          <i class="fas fa-desktop"></i>
+        </div>
+        <div class="setting-label">Resolução de Tela</div>
+        <div class="setting-control">
+          <select>
+            <option>Automática</option>
+            <option>Full Screen</option>
+            <option>Modo Janela</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="account-section">
+      <h2>Conta</h2>
+      <div class="setting-item">
+        <div class="setting-icon">
+          <i class="fas fa-sign-out-alt"></i>
+        </div>
+        <div class="setting-label">Desconectar</div>
+        <div class="setting-control">
+          <button class="disconnect-button">Desconectar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
