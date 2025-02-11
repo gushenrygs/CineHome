@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link Font Awesome -->
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="left">
+            <button class="back-button" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i> <!-- Ícone da seta -->
+            </button>
+        </div>
+
+        <!-- Texto centralizado "Meu perfil" -->
+        <div class="center">
+            <span>Meu perfil</span>
+        </div>
+
+        <div class="right">
+            <div class="profile-container">
+                <img src="perf.webp" alt="Foto de Perfil" class="profile-pic">
+                <div class="dropdown">
+                    <button class="dropdown-button"><i class="fas fa-cogs"></i></button> <!-- Ícone de configurações -->
+                    <div class="dropdown-content">
+                        <button class="settings-button"><i class="fas fa-cogs"></i> Configurações</button>
+                        <button class="personal-data-button"><i class="fas fa-user"></i> Dados pessoais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="filmes-assistidos">
+            <h2 class="titu1">Filmes Assistidos:</h2>
+            <div class="filmes">
+                <div class="filmes2">
+                    <div class="filme">
+                        <img src="oppe.jpg" alt="Oppenheimer">
+                    </div>
+                    <div class="filme">
+                        <img src="barbie.jpg" alt="Barbie">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="divider"></div>
+
+        <section class="continuar-assistindo">
+            <h2 class="titu2">Continuar Assistindo:</h2>
+            <div class="filmes">
+                <div class="filme">
+                    <img src="batman.webp" alt="Batman">
+                </div>
+                <div class="filme">
+                    <img src="subs.jpg" alt="The Substance">
+                </div>
+                <div class="filme">
+                    <img src="titanic.jpg" alt="Titanic">
+                </div>
+                <div class="filme">
+                    <img src="moana2.jpg" alt="Moana 2">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Função para voltar para a página anterior
+        function goBack() {
+          window.history.back();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #141414;
+    color: white;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    height: 70px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left .back-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.left .back-button:hover {
+    color: #7a1ae6; /* Cor roxa ao passar o mouse */
+    transform: rotate(180deg); /* Efeito de rotação na seta */
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.profile-pic {
+    position: relative;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-content button:hover {
+    color: #7a1ae6;
+}
+
+/* Novo estilo para a parte central da navbar */
+.center {
+    flex-grow: 1;
+    text-align: center;
+    position: relative; /* Necessário para o sublinhado */
+}
+
+.center span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px; /* Espaço para o sublinhado */
+    transition: color 0.3s ease; /* Transição para a cor */
+}
+
+/* Efeito de sublinhado ao passar o mouse */
+.center span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #7a1ae6; /* Cor do sublinhado */
+    transition: width 0.3s ease; /* Animação do sublinhado */
+}
+
+.center span:hover {
+    color: #7a1ae6; /* Cor do texto ao passar o mouse */
+}
+
+.center span:hover::after {
+    width: 100%; /* O sublinhado cresce para a largura total do texto */
+}
+
+/* Restante do estilo dos filmes e layout */
+.filmes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Para alinhar à esquerda */
+    margin-top: 30px;
+}
+
+.filmes2 {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; /* Para garantir que fiquem lado a lado */
+}
+
+.filme {
+    position: relative;
+    text-align: center;
+}
+
+.filme img {
+    width: 190px;
+    height: 270px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.filme:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+.filme::after {
+    content: "Assistir";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.filme:hover::after {
+    opacity: 1;
+}
+
+.divider {
+    border-top: 1px solid #333;
+    margin: 30px 0;
+}
+
+.titu1, .titu2 {
+    padding-left: 15px;
+    border-left: 4px solid #7a1ae6;
+    margin-left: 10px;
+}
+
+.titu1 {
+    margin-top: 30px;
+}
+
+.titu2 {
+    margin-top: 10px;
+}
